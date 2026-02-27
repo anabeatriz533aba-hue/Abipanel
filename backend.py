@@ -35,7 +35,7 @@ INDEX_PAGE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seyfetin Efendi Panel</title>
+    <title>Efendi Panel</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
         body {
@@ -335,7 +335,7 @@ INDEX_PAGE = """
     
     <div class="content">
         <div class="welcome-box">
-            <h1>Seyfetin Efendi Panel</h1>
+            <h1>Efendi Panel</h1>
             <p>Hoş geldiniz, <strong>{{ session.email if session.email else 'Misafir' }}</strong>!<br>Yetkiniz: <span style="color: #3b82f6;">{{ session.role if session.role else 'Misafir' }}</span></p>
             
             {% if session.role in ['vip', 'kurucu'] %}
@@ -385,7 +385,7 @@ LOGIN_PAGE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seyfetin Efendi · giriş</title>
+    <title>Efendi · giriş</title>
     <style>
         * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif; }
         body {
@@ -475,7 +475,7 @@ LOGIN_PAGE = """
     <div class="login-box">
         <div class="logo">
             <i class="fas fa-crown"></i>
-            <h1>Seyfetin Efendi</h1>
+            <h1>Efendi</h1>
         </div>
         
         {% if error %}<div class="error">{{ error }}</div>{% endif %}
@@ -505,7 +505,7 @@ REGISTER_PAGE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seyfetin Efendi · kayıt</title>
+    <title>Efendi · kayıt</title>
     <style>
         * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif; }
         body {
@@ -636,7 +636,7 @@ MARKET_PAGE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seyfetin Efendi · market</title>
+    <title>Efendi · market</title>
     <style>
         * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif; }
         body {
@@ -976,7 +976,7 @@ QUERY_PAGE = """
     <div class="navbar">
         <div class="nav-brand">
             <i class="fas fa-crown"></i>
-            <span>Seyfetin Efendi</span>
+            <span>Efendi</span>
         </div>
         <div class="nav-links">
             <a href="/" class="nav-link">Ana Sayfa</a>
